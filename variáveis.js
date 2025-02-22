@@ -14,4 +14,4 @@ const pessoa2 = {
     idade = 11,
 }
 
-console.log
+console.log(pessoa1);
