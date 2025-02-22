@@ -9,9 +9,9 @@ const pessoa1 = {
 }
 
 const pessoa2 = {
-    nome = "Yuri",
-    vivo = true,
-    idade = 11,
+    nome: "Yuri",
+    vivo: true,
+    idade: 11,
 }
 
 console.log(pessoa1);
