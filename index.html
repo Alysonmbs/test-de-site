@@ -6,10 +6,9 @@
     <title>testando</title>
     <style>
         .login{
-            margin-left: auto;
+            margin-left: 20px;
             margin-right: auto;
-            width: 190px;
-            text-align: center;
+            width: 80px;
         }
 
         .idade{
@@ -19,41 +18,29 @@
         .butão{
             background-color: blueviolet;
             height: 30px;
-            margin-left: 140px;
-            margin-right: auto;
-            margin-bottom: 30px;
-            text-align: center;
+            margin: 10px;
         }
         button:hover{
             transition-duration: 150ms;
             transform: scale(1.2);
-        }
-        .anúncio{
-            text-align: center;
-            font-family: inherit;
-            color: brown;
-            margin-top: 10px;
-        }
-        #fixado{
-            position: sticky;
-            background-color: chartreuse;
-            margin-top: 0px;
-            text-align: center;
-            top: 0px;
+            margin: 10px;
         }
     </style>
 </head>
-<body style="margin: 0px;">
-    <h1 id="fixado">isso aqui vai te seguir</h1>
+<body>
+    <header>
+        <a href="#home">home</a>
+        <a href="#dois">home2</a>
+    </header>
     <ol>
-        <li>conteudo 1.1</li>
-        <li>conteudo 1.2</li>
+        <li>conteudo 1</li>
+        <li>conteudo 2</li>
     </ol>
     <ul>
-        <li>conteudo 2.1</li>
-        <li>conteudo 2.2</li>
+        <li>conteudo 1</li>
+        <li>conteudo 2</li>
     </ul>
-    <a href="https://alysonmbs.github.io/site-suspeito/" target="_blank" style="margin-left: 10px;">link interessante</a>
+    <a href="https://alysonmbs.github.io/site-suspeito/" target="_blank">link interessante</a>
     <table style="margin: 50px;">
         <tr>
             <td>tabelinha 1.1</td>
@@ -72,33 +59,31 @@
     <form action="formulario.html" method="get">
         <label for="nome">Bota o nome ai</label>
         <input type="text" name="nome" id="nome">
-        <br>
         <label for="email">bota o email</label>
         <input type="email" name="email" id="email">
-        <br>
         <label for="senha">senha</label>
         <input type="password" name="senha" id="senha">
-        <br>
         <label for="idade">sua idade</label>
-        <br>
         <input type="number" name="idade" id="idade" min="1" max="60" class="idade">
-        <br>
         <label for="Roubo de IP">bote seu IP</label>
         <input type="number" name="Seu IP" id="roubo de IP">
-        <br>
         <label for="ja foi">ja fui hackeado:</label>
-        <input type="radio" name="Hackeado?" id="ja foi" value="adivinha" style="width: 20px; margin: auto;">
-        <br>
-        <label for="não foi" style="margin: 2px;">nunca fui hackeado:</label>
+        <input type="radio" name="Hackeado?" id="ja foi" value="adivinha">
+
+        <label for="não foi">nunca fui hackeado:</label>
         <input type="radio" name="Hackeado?" id="não foi" value="se fudeu">
         <button type="reset">apagar sua burrice</button>
         <button type="submit">enviar</button>
-        
     </form>
     </div>
-    <div class="anúncio">clica aqui, seu dinheiro  não  some e vc aprende mais</div>
     <a href="https://youtu.be/BKATrAAWrRo?si=n1uJFl6bn188gKK3"><button class="butão">link pra vídeo  sobre CSS </button></a>
-    <iframe src="https://alysonmbs.github.io/site-suspeito/" frameborder="1" style="height: 700px; width: 400px;"></iframe>
+    <iframe src="https://alysonmbs.github.io/site-suspeito/" frameborder="1" style="height: 500px; width: 400px;"></iframe>
     
+    <section id="home">
+    <h1>lasanha</h1>
+    </section>
+    <section id="dois">
+        <h1>lasanha dnv</h1>
+    </section>
 </body>
 </html>
