@@ -24,6 +24,7 @@
         body{
             text-align: center;
             background-color: rgb(white, black);
+            transition-duration: 150ms;
         }
         #Inicio{
         background-color: black;
@@ -37,7 +38,6 @@
         <h1>Troca de cor</h1>
         <button class="black" id="preto" onclick="Trocacorpreto('black')">Preto</button>
         <button class="white" id="branco" onclick="Trocacorbranco('white')">Branco</button>
-        <button class="random" id="random" onclick="Trocacoraleatorio">Aleatorio</button>
         <div>
             <a href="https://alysonmbs.github.io/test-de-site/"><button id="Inicio">Inicio</button></a>
         </div>
@@ -48,12 +48,6 @@
         }
         function Trocacorbranco(){
          document.body.style.backgroundColor = 'white';
-        }
-        function Trocacoraleatorio(){
-            const red = Math.floor(Math.random()*255)
-            const green = Math.floor(Math.random()*255)
-            const blue = Math.floor(Math.random()*255)
-            document.body.style.backgroundColor = `rgb( ${red}, ${green}, ${blue})`
         }
 
     </script>
