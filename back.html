@@ -31,12 +31,15 @@
 <body>
     <section>
         <div>
-        <button class="black" id="preto">preto</button>
-        <button class="white" id="branco">branco</button>
+        <button class="black" id="preto" onclick="preto">preto</button>
+        <button class="white" id="branco" onclick="branco">branco</button>
         </div>
     </section>
     <script>
-        function mudarcor(){
+        function preto(){
+         document.body.style.backgroundColor = "black";
+        }
+        function branco(){
          document.body.style.backgroundColor = "black";
         }
     </script>
