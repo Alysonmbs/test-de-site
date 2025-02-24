@@ -37,7 +37,7 @@
         <h1>Troca de cor</h1>
         <button class="black" id="preto" onclick="Trocacorpreto('black')">Preto</button>
         <button class="white" id="branco" onclick="Trocacorbranco('white')">Branco</button>
-        <button class="random" id="random" onclick="Random">Aleatorio</button>
+        <button class="random" id="random" onclick="Trocacoraleatorio">Aleatorio</button>
         <div>
             <a href="https://alysonmbs.github.io/test-de-site/"><button id="Inicio">Inicio</button></a>
         </div>
@@ -49,7 +49,7 @@
         function Trocacorbranco(){
          document.body.style.backgroundColor = 'white';
         }
-        function Random(){
+        function Trocacoraleatorio(){
             const red = Math.floor(Math.random() * 255)
             console.log(red)
         }
