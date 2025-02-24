@@ -33,7 +33,10 @@
         </div>
     </section>
     <script>
-          document.getElementById(preto).addEventListener("click", function(){
+         const branco=document.getElementById('branco')
+         const preto=document.getElementById('preto')
+
+         document.getElementById(preto).addEventListener("click", function(){
          document.querySelector(body).setAtribute("class","black");
     })
           document.getElementById(branco).addEventListener("click", function(){
