@@ -33,22 +33,22 @@
       ctx.fillRect(20, 20, 100, 50); // (x, y, width, height)
 
      // Draw a circle
-                                                         ctx.beginPath();
-                                                            ctx.arc(240, 100, 50, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
-                                                              ctx.fillStyle = "#00FF00"; // Green color
-                                                                ctx.fill();
-                                                                  ctx.stroke(); // Draw the outline
-
-                                                                    // Draw a line
-                                                                      ctx.beginPath();
-                                                                        ctx.moveTo(10, 150);
-                                                                          ctx.lineTo(380, 180);
-                                                                            ctx.strokeStyle = "#0000FF"; // Blue color
-                                                                              ctx.lineWidth = 3;
-                                                                                ctx.stroke();
-
-                                                                                  // Write some text
-                                                                                    ctx.font = "30px Arial";
+      ctx.beginPath();
+      ctx.arc(240, 100, 50, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
+      ctx.fillStyle = "#00FF00"; // Green color
+      ctx.fill();
+      ctx.stroke();  // Draw the outline
+    
+   // Draw a line
+     ctx.beginPath();         
+     ctx.moveTo(10, 150);
+     ctx.lineTo(380, 180);
+     ctx.strokeStyle = "#0000FF";// Blue color
+     ctx.lineWidth = 3;
+     ctx.stroke();
+          
+      // Write some text
+      ctx.font = "30px Arial";
                                                                                       ctx.fillStyle = "purple";
                                                                                         ctx.fillText("Hello Canvas", 50, 180);
                                                                                         </script>
