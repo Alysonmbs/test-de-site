@@ -4,37 +4,36 @@
 <title>Canvas Example</title>
 <style>
   body {
-      margin: 0; /* Remove default body margin */
-          display: flex;
-              justify-content: center; /* Center content horizontally */
-                  align-items: center; /* Center content vertically */
-                      height: 100vh; /* Make body full height */
-                          background-color: #f0f0f0; /* Light grey background */
-                            }
+    margin: 0; /* Remove default body margin */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Make body full height */
+    background-color: #f0f0f0; /* Light grey background */
+}
 
-                              canvas {
-                                  background-color: white; /* White background for canvas */
-                                      border: 1px solid black; /* Black border */
-                                          box-shadow: 5px 5px 10px rgba(0,0,0,0.2); /* Add shadow for better visibility */
-                                            }
-                                            </style>
-                                            </head>
-                                            <body>
+    canvas {
+     background-color: white; /* White background for canvas */
+     border: 1px solid black; /* Black border */
+     box-shadow: 5px 5px 10px rgba(0,0,0,0.2); /* Add shadow for better visibility */
+        }
+       </style>
+       </head>
+      <body>
 
-                                            <canvas id="myCanvas" width="400" height="200">
-                                            Your browser does not support the HTML5 canvas tag.
-                                            </canvas>
+      <canvas id="myCanvas" width="400" height="200">
+       Your browser does not support the HTML5 canvas tag.
+      </canvas>
+        <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+          
+     // Draw a rectangle
+      ctx.fillStyle = "#FF0000"; // Red color
+      ctx.fillRect(20, 20, 100, 50); // (x, y, width, height)
 
-                                            <script>
-                                              const canvas = document.getElementById("myCanvas");
-                                                const ctx = canvas.getContext("2d");
-
-                                                  // Draw a rectangle
-                                                    ctx.fillStyle = "#FF0000"; // Red color
-                                                      ctx.fillRect(20, 20, 100, 50); // (x, y, width, height)
-
-                                                        // Draw a circle
-                                                          ctx.beginPath();
+     // Draw a circle
+                                                         ctx.beginPath();
                                                             ctx.arc(240, 100, 50, 0, 2 * Math.PI); // (x, y, radius, startAngle, endAngle)
                                                               ctx.fillStyle = "#00FF00"; // Green color
                                                                 ctx.fill();
