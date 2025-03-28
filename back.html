@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-fundo</title>
+    <style>
+        #random{
+            background-color: black;
+            color: white;
+        }
+        #preto{
+            background-color: black;
+            color: white;
+        }
+        #branco{
+            background-color: white;
+            color: black;
+        }
+        button:hover{
+            transform: scale(1.1);
+            transition-duration: 150ms;
+        }
+        body{
+            color: rgb(black, white);
+            text-align: center;
+            background-color: rgb(white, black);
+            transition-duration: 700ms;
+        }
+        #Inicio{
+        background-color: black;
+        color: white;
+        margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Troca de cor</h1>
+    <section>
+        <button class="black" id="preto" onclick="Trocacorpreto('black')">Preto</button>
+        <button class="white" id="branco" onclick="Trocacorbranco('white')">Branco</button>
+        <div>
+            <a href="https://alysonmbs.github.io/test-de-site/"><button id="Inicio">Inicio</button></a>
+        </div>
+    </section>
+    <script>
+        function Trocacorpreto(){
+         document.body.style.backgroundColor = 'black';
+         document.body.style.color = 'white';
+        }
+        function Trocacorbranco(){
+         document.body.style.backgroundColor = 'white';
+         document.body.style.color = 'black';
+        }
+
+    </script>
+</body>
+</html>
