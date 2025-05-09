@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Médias</title>
+  <script>
+    function calcularMedia(n1, n2) {
+      return (n1 + n2) / 2;
+    }
+
+    function executarCalculo() {
+      let nota1A = parseFloat(prompt("Digite a primeira nota do aluno A:"));
+      let nota2A = parseFloat(prompt("Digite a segunda nota do aluno A:"));
+      let nota1B = parseFloat(prompt("Digite a primeira nota do aluno B:"));
+      let nota2B = parseFloat(prompt("Digite a segunda nota do aluno B:"));
+
+      let media1 = calcularMedia(nota1A, nota2A);
+      let media2 = calcularMedia(nota1B, nota2B);
+      let mediaGeral = calcularMedia(media1, media2);
+
+      alert("Média do aluno A: " + media1.toFixed(2));
+      alert("Média do aluno B: " + media2.toFixed(2));
+      alert("Média Geral: " + mediaGeral.toFixed(2));
+    }
+  </script>
+</head>
+<body onload="executarCalculo()">
+  <h1>Cálculo de Médias com JavaScript</h1>
+  <p>As médias serão calculadas automaticamente quando a página carregar.</p>
+</body>
+</html>
