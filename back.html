@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test-fundo</title>
     <style>
+        button{
+            background-color: black;
+            color: white;
+        }
         #random{
             background-color: black;
             color: white;
@@ -37,6 +41,9 @@
 <body>
     <h1>Troca de cor</h1>
     <section>
+        <audio id="musica" src="AUD-20250611-WA0160.mp3"></audio>
+        <button id="play" onclick="Iniciarmusica()">Play</button>
+        <button id="stop" onclick="Pararmusica()">Parar</button>
         <button class="black" id="preto" onclick="Trocacorpreto('black')">Preto</button>
         <button class="white" id="branco" onclick="Trocacorbranco('white')">Branco</button>
         <div>
@@ -44,6 +51,8 @@
         </div>
     </section>
     <script>
+        const musica = document.getElementById('musica');
+        
         function Trocacorpreto(){
          document.body.style.backgroundColor = 'black';
          document.body.style.color = 'white';
@@ -51,6 +60,12 @@
         function Trocacorbranco(){
          document.body.style.backgroundColor = 'white';
          document.body.style.color = 'black';
+        }
+        function Inicarmusica(){
+            musica.play();
+        }
+        function Pararmusica(){
+            musica.stop();
         }
 
     </script>
