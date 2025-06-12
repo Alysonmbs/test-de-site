@@ -41,7 +41,7 @@
 <body>
     <h1>Troca de cor</h1>
     <section>
-        <audio id="musica" src="AUD-20250611-WA0160.mp3" controls></audio>
+        <audio id="musica" src="AUD-20250611-WA0160.mp3"></audio>
         <button id="play" onclick="Iniciarmusica()">Play</button>
         <button id="stop" onclick="Pararmusica()">Parar</button>
         <button class="black" id="preto" onclick="Trocacorpreto('black')">Preto</button>
@@ -61,7 +61,7 @@
          document.body.style.backgroundColor = 'white';
          document.body.style.color = 'black';
         }
-        function Inicarmusica(){
+        function Iniciarmusica(){
             musica.play();
         }
         function Pararmusica(){
