@@ -24,8 +24,14 @@
         <a href="https://alysonmbs.github.io/test-de-site/"><button id="Inicio">Inicio</button></a>
         
     </section>
-
+    <button onclick="ad()">função</button>
+<div id=bloco></div>
     <script>
+        function ad(){
+        const bloco = getElementById("block")
+        bloco.style.background-color: blue;
+        }
+        
         function minhafunção(){
 
             var texto = document.querySelector('#texto').value;
