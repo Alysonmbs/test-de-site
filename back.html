@@ -42,6 +42,9 @@
     <h1>Troca de cor</h1>
     <section>
         <audio id="musica" src="AUD-20250611-WA0160.mp3"></audio>
+        <div id="quadrado"></div>
+        <button id="iniciar">Iniciar</button>
+        <button id="parar">Parar</button>
         <button id="play" onclick="Iniciarmusica()">Play</button>
         <button id="stop" onclick="Pararmusica()">Parar</button>
         <button class="black" id="preto" onclick="Trocacorpreto('black')">Preto</button>
@@ -51,6 +54,29 @@
         </div>
     </section>
     <script>
+        const quadrado = document.getElementById("quadrado");
+        const iniciarBtn = document.getElementById("iniciar");
+        const pararBtn = document.getElementById("parar");
+
+        const cores = ["red", "blue", "green", "purple", "orange", "yellow"];
+        let indice = 0;
+        let intervalo = null;
+
+        function mudarCor() {
+        quadrado.style.backgroundColor = cores[indice];
+        indice = (indice + 1) % cores.length;
+        }
+
+        iniciarBtn.addEventListener("click", () => {
+        if (!intervalo) {
+        intervalo = setInterval(mudarCor, 1000);
+        }
+        });
+
+        pararBtn.addEventListener("click", () => {
+        clearInterval(intervalo);
+        intervalo = null;
+        });
         const musica = document.getElementById('musica');
         
         function Trocacorpreto(){
