@@ -25,11 +25,20 @@
         
     </section>
     <button onclick="ad()">função</button>
+    <button onclick="ap()">função</button>
+    <button onclick="color()">função</button>
 <div id=bloco>a</div>
     <script>
-        function ad(){
         const bloco = document.getElementById("bloco");
+        
+        function color(){
+        bloco.style.Color = "red";
+        }
+        function ad(){       
         bloco.style.backgroundColor = "blue";
+        }
+        function ap(){
+        bloco.style.backgroundColor = "green";
         }
         
         function minhafuncao(){
